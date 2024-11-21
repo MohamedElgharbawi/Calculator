@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="calculator">
+        <input readonly id="display">
+        <div id="keys">
+            <button onclick="appendToDisplay(this.innerHTML)" class="operator-btn">+</button>
+            <button onclick="appendToDisplay(this.innerHTML)">7</button>
+            <button onclick="appendToDisplay(this.innerHTML)">8</button>
+            <button onclick="appendToDisplay(this.innerHTML)">9</button>
+            <button onclick="appendToDisplay(this.innerHTML)" class="operator-btn">-</button>
+            <button onclick="appendToDisplay(this.innerHTML)">4</button>
+            <button onclick="appendToDisplay(this.innerHTML)">5</button>
+            <button onclick="appendToDisplay(this.innerHTML)">6</button>
+            <button onclick="appendToDisplay(this.innerHTML)" class="operator-btn">*</button>
+            <button onclick="appendToDisplay(this.innerHTML)">1</button>
+            <button onclick="appendToDisplay(this.innerHTML)">2</button>
+            <button onclick="appendToDisplay(this.innerHTML)">3</button>
+            <button onclick="appendToDisplay(this.innerHTML)" class="operator-btn">/</button>
+            <button onclick="calculate()" class="operator-btn">=</button>
+            <button onclick="appendToDisplay(this.innerHTML)">0</button>
+            <button onclick="appendToDisplay(this.innerHTML)">.</button>
+            <button onclick="clearDisplay()" class="operator-btn">C</button>
+            <button onclick="deleteLastNum()" class="operator-btn">Del</button>
+            <button onclick="appendToDisplay(this.innerHTML)">(</button>
+            <button onclick="appendToDisplay(this.innerHTML)">)</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
